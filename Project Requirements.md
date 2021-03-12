@@ -7,7 +7,7 @@
 
 ## ⚡️Project Overview
 
-1. Choose a homework asssignment, teamwork assignment, or example code.
+1. Choose a homework assignment, teamwork assignment, or example code.
 2. Reimplement the code in object-oriented style.
 3. Implement mouse or keyboard interaction via event handling. All interaction must be through the program, not the Python console.
 4. Add additional features to the project.
