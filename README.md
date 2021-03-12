@@ -17,7 +17,7 @@ Throughout this project, you have likely used outside resources. Reference all i
 
 ❗️**Title**: Rock Paper Scissors II
 
-❗**Purpose**: Play a game of advanced rock paper scissors with the user
+❗**Purpose**: Play a game of rock paper scissors lizard spock with the user
 
 ❗️**Sources**:  Rock Paper Scissors Lizard Spock A06.
 
