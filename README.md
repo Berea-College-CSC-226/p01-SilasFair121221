@@ -2,7 +2,7 @@
 
 **Term**: Spring 2021
 
-❗️**Author(s)**: Your name(s) here
+**Author(s)**: Silas Fair
 
 ❗️indicates action items; you should remove these emoji as you complete/update the items which they accompany. (This means that your final README should have no ❗️in it!)
 
@@ -15,13 +15,13 @@ Throughout this project, you have likely used outside resources. Reference all i
 
 ## Milestone 1: Setup, Planning, Design
 
-❗️**Title**: What is the title of your project?
+❗️**Title**: Rock Paper Scissors II
 
-❗**Purpose**: In a single sentence, describe what your project will do.
+❗**Purpose**: Play a game of advanced rock paper scissors with the user
 
-❗️**Sources**: Which assignments or code will you base your project on?
+❗️**Sources**:  Rock Paper Scissors Lizard Spock A06.
 
-❗️**Kanban Board**: What is the link to the Kanban board on Trello?
+❗️**Kanban Board**: https://trello.com/b/YKLXx2Ed/fairs-kanban-board
 
 ❗️**CRC Card**:
   - Please write a CRC card for a class that your project will implement.
@@ -32,6 +32,8 @@ Throughout this project, you have likely used outside resources. Reference all i
   by saving an image in the repository and linking to it. See the sample CRC card below - and replace it with your own.
   
 ![alt text](image/crc.png "Image of CRC card as an example. Upload your CRC card(s) in place of this one")
+![image](https://user-images.githubusercontent.com/78548914/110878955-20b95480-82aa-11eb-8629-b97a63d7e4f9.png)
+
 
 ---
 
