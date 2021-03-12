@@ -31,7 +31,6 @@ Throughout this project, you have likely used outside resources. Reference all i
   as an image and including the image(s) in the README. You can do this
   by saving an image in the repository and linking to it. See the sample CRC card below - and replace it with your own.
   
-![alt text](image/crc.png "Image of CRC card as an example. Upload your CRC card(s) in place of this one")
 ![image](https://user-images.githubusercontent.com/78548914/110878955-20b95480-82aa-11eb-8629-b97a63d7e4f9.png)
 
 
