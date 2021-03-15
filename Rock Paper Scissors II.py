@@ -78,7 +78,7 @@ class Player:
 
 class Computer:
     wins = 0
-    history = []
+    history = [] # the history of choices the computer has made
     weapon = 0
 
     def __init__(self):
