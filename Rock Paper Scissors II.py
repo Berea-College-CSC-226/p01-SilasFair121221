@@ -100,8 +100,8 @@ class Player:
             else :
                 Scorekeeper.turtle.shape(Scorekeeper.shapes[3])
         else:
-            self.turtle.setpos(-100, -120)  # move player hand back
-            Computer.turtle.setpos(70, -100)  # move computer hand back
+            self.turtle.setpos(-100, -120)  # move player hand back to start position
+            Computer.turtle.setpos(70, -100)  # move computer hand back to start position
             self.choosing = True
             Scorekeeper.turtle.shape(Scorekeeper.shapes[0])
             Computer.turtle.shape(Weapons.computer_images[0])
