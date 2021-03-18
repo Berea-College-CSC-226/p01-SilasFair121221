@@ -46,9 +46,9 @@ No README action items. Keep your Kanban board up to date, and focus on your cod
 
 Indicates what percentage of the project you have left to complete, and how confident you are feeling. 
 
-❗️**Completion Percentage**: 0 - 100%
+**Completion Percentage**: 95%
 
-❗️**Confidence**: Describe how confident you feel about completing this project, and why. Then, describe some strategies you can employ to increase the likelihood taht you'll be successful in completing this project before the deadline.
+**Confidence**: I am confident that I will have the project finished by the deadline. I have made a working rock paper scissors spock game using classes. The code needs some cleaning up and I need to add two more simple functions for when the player or computer gets the score above 10 to show that they won. I need to make sure my code is a little cleaner and easier to parse.
 
 ---
 
