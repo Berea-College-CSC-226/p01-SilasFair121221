@@ -19,8 +19,6 @@ class Wn:
     wn.bgpic("gifs/final_project_background.gif")
 
 
-
-
 class Tutorial:
     # this text pops up on the screen and shows the user how to play
     # when the player presses a button it disappears
@@ -125,9 +123,9 @@ class Player:
             Computer.turtle.seth(270 - 50)
             self.turtle.fd(60)
             Computer.turtle.fd(30)
+
             # Choose a hand for the computer
             choose_hand(Computer)
-            print(Player.weapon +" vs "+ Computer.weapon)
             if get_winner(self.weapon, Computer.weapon) == "winner":
                 print(Player.history)
                 Player.score +=1
@@ -165,19 +163,6 @@ class Computer:
         self.turtle.shape("gifs/computer_rock.gif")
         self.turtle.resizemode("auto")
 
-def choose_hand(self):
-    """
-    choose a weapon and shape for an object
-    :param self: an object with variables shape and weapon
-    """
-
-    w = random.randint(0, 4)
-    if len(Player.history) > 0:
-        if Player.history[-1] == "rock":
-            w = 1
-    self.weapon = Weapons.weapon[w]
-    self.turtle.shape(Weapons.computer_images[w])
-
 class Scorekeeper:
     shapes = ["gifs/score_man.gif","gifs/score_man_win.gif","gifs/score_man_tie.gif","gifs/score_man_lose.gif"]
     wn = Wn.wn
@@ -205,8 +190,42 @@ class Score:
         self.turtle.clear()
         #self.turtle.pencolor("white")
         self.turtle.write(str(Player.score)+"                "+str(Computer.score), move=False, align="center",
-                 font=("Arial", 20, "normal"))
+                font=("Arial", 20, "normal"))
 
+def choose_hand(self):
+    """
+    choose a weapon and shape for an object
+    :param self: an object with variables shape and weapon
+    """
+
+    w = random.randint(0, 4)
+    if len(Player.history) > 0:
+        if Player.history[len(Player.history)-1] == "rock":
+            w = 4
+    self.weapon = Weapons.weapon[w]
+    self.turtle.shape(Weapons.computer_images[w])
+
+
+def announce_overall_winner():
+    """
+    Announce the overall winner if the user gets a score over 10 or the
+    computer gets a score over 10
+    """
+    global has_won
+    if Player.score >= 9:
+        has_won = True
+        new_wn = turtle.Screen()
+        Wn.wn.clear()
+        new_wn.addshape("gifs/winner.gif")
+        new_wn.bgpic("gifs/winner.gif") #set the background to the winner image
+        new_wn.exitonclick()
+    elif Computer.score >= 9:
+        has_won = True
+        Wn.wn.clear()
+        new_wn = turtle.Screen()
+        new_wn.addshape("gifs/loser.gif")
+        new_wn.bgpic("gifs/loser.gif") # set the background to loser image
+        new_wn.exitonclick()
 
 
 def get_winner(self, computer):
@@ -216,9 +235,8 @@ def get_winner(self, computer):
     :param computer
     :return "winner", "loser" or "tie".
     """
+    announce_overall_winner()
     user = self
-    #Weapons.weapon[user]
-    #Weapons.weapon[computer]
     if user == "scissors" and computer == "paper":
         return "winner"
     elif user == "paper" and computer == "spock":
@@ -236,23 +254,27 @@ def get_winner(self, computer):
     elif user == "spock" and computer == "rock":
         return "winner"
     elif user == "rock" and computer == "scissors":
-        return "winner"
         Scorekeeper.turtle.shape(Scorekeeper.shapes[1])
+        return "winner"
     elif user == computer:  # if the user and computer choose the same thing declare a TIE!
-        return "tie"
         Scorekeeper.turtle.shape(Scorekeeper.shapes[2])
+        return "tie"
     else:   # if the computer wins return loser
-        return "loser"
         Scorekeeper.turtle.shape(Scorekeeper.shapes[3])
+        return "loser"
+
 
 
 def main():
-    Score()
-    Computer()
-    Scorekeeper()
-    Player()
-    Tutorial()
-    get_winner(Player.weapon,Computer.weapon)
+    global has_won
+    has_won = False
+    if (has_won == False):
+        Score()
+        Computer()
+        Scorekeeper()
+        Player()
+        Tutorial()
+        get_winner(Player.weapon,Computer.weapon)
     Wn.wn.mainloop()
 
 
