@@ -218,7 +218,7 @@ def announce_overall_winner():
         new_wn.addshape("gifs/winner.gif")
         new_wn.bgpic("gifs/winner.gif") #set the background to the winner image
         winsound.PlaySound("sounds/win song.wav", winsound.SND_ASYNC)
-        new_wn.exitonclick()
+        new_wn.mainloop()
     elif Computer.score >= 9:
         has_won = True
         Wn.wn.clear()
@@ -226,7 +226,7 @@ def announce_overall_winner():
         new_wn.addshape("gifs/loser.gif")
         new_wn.bgpic("gifs/loser.gif") # set the background to loser image
         winsound.PlaySound("sounds/machine wins.wav", winsound.SND_ASYNC)
-        new_wn.exitonclick()
+        new_wn.mainloop()
 
 
 def get_winner(self, computer):
