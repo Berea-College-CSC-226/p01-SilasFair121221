@@ -68,9 +68,9 @@ If the user gets the score above 10, they win the game. If the computer gets a s
 
 ### Errors and Constraints
 Every program has bugs or features that had to be scrapped for time. Use this section to create a bullet list of all known errors and deficiencies that remain in your code. Bugs found that aren't acknowledged here will be penalized.
-If the user presses the spacebar too quickly
 
- If the user presses the spacebar too quickly the robot arm moves across the screen.
+ If the user presses the spacebar too quickly the robot arm starts chaking and then does all the hand signs very quickly.
+ I was not able to prevent the player from choosing a hand sign before resetting the position. If I could figure out why it didn't work I would have done that.
 
 ### ❗Reflection
 In three to four well-written paragraphs, address the following (at a minimum):
