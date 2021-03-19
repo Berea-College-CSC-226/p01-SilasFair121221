@@ -10,6 +10,9 @@
 ##################################################################################
 import random
 import turtle
+import winsound
+
+
 
 class Wn:
     wn = turtle.Screen()  # create the window
@@ -99,35 +102,31 @@ class Player:
         if self.choosing == True: # is the choosing is true it lets you enter your choice
             self.choosing = False
             # set make the hands move
-            self.turtle.seth(270+50)
-            Computer.turtle.seth(270-50)
-            self.turtle.fd(60)
-            Computer.turtle.fd(30)
+            self.turtle.setpos(-100+30, -120-40)  # move player hand back to start position
+            Computer.turtle.setpos(70-30, -100-40)  # move computer hand back to start position
 
-            self.turtle.seth(270 + 50)
-            Computer.turtle.seth(270 - 50)
-            self.turtle.fd(-60)
-            Computer.turtle.fd(-30)
+            self.turtle.setpos(-100, -120)  # move player hand back to start position
+            Computer.turtle.setpos(70, -100)  # move computer hand back to start position
 
-            self.turtle.seth(270 + 50)
-            Computer.turtle.seth(270 - 50)
-            self.turtle.fd(60)
-            Computer.turtle.fd(30)
+            self.turtle.setpos(-100+30, -120-40)  # move player hand back to start position
+            Computer.turtle.setpos(70-30, -100-40)  # move computer hand back to start position
 
-            self.turtle.seth(270 + 50)
-            Computer.turtle.seth(270 - 50)
-            self.turtle.fd(-60)
-            Computer.turtle.fd(-30)
+            self.turtle.setpos(-100, -120)  # move player hand back to start position
+            Computer.turtle.setpos(70, -100)  # move computer hand back to start position
 
-            self.turtle.seth(270 + 50)
-            Computer.turtle.seth(270 - 50)
-            self.turtle.fd(60)
-            Computer.turtle.fd(30)
+            self.turtle.setpos(-100+30, -120-40)  # move player hand back to start position
+            Computer.turtle.setpos(70-30, -100-40)  # move computer hand back to start position
+
+            self.turtle.setpos(-100, -120)  # move player hand back to start position
+            Computer.turtle.setpos(70, -100)  # move computer hand back to start position
+
+            self.turtle.setpos(-100 + 30, -120 - 40)  # move player hand back to start position
+            Computer.turtle.setpos(70 - 30, -100 - 40)  # move computer hand back to start position
+
 
             # Choose a hand for the computer
             choose_hand(Computer)
             if get_winner(self.weapon, Computer.weapon) == "winner":
-                print(Player.history)
                 Player.score +=1
                 Score()
                 Scorekeeper.turtle.shape(Scorekeeper.shapes[1])
@@ -218,6 +217,7 @@ def announce_overall_winner():
         Wn.wn.clear()
         new_wn.addshape("gifs/winner.gif")
         new_wn.bgpic("gifs/winner.gif") #set the background to the winner image
+        winsound.PlaySound("sounds/win song.wav", winsound.SND_ASYNC)
         new_wn.exitonclick()
     elif Computer.score >= 9:
         has_won = True
@@ -225,6 +225,7 @@ def announce_overall_winner():
         new_wn = turtle.Screen()
         new_wn.addshape("gifs/loser.gif")
         new_wn.bgpic("gifs/loser.gif") # set the background to loser image
+        winsound.PlaySound("sounds/machine wins.wav", winsound.SND_ASYNC)
         new_wn.exitonclick()
 
 
@@ -268,6 +269,8 @@ def get_winner(self, computer):
 def main():
     global has_won
     has_won = False
+    # play a song
+    winsound.PlaySound("sounds/RPS music.wav", winsound.SND_ASYNC)
     if (has_won == False):
         Score()
         Computer()
