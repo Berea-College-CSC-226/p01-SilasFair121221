@@ -4,7 +4,7 @@
 
 **Author(s)**: Silas Fair
 
-❗️indicates action items; you should remove these emoji as you complete/update the items which they accompany. (This means that your final README should have no ❗️in it!)
+indicates action items; you should remove these emoji as you complete/update the items which they accompany. (This means that your final README should have no in it!)
 
 ---
 
@@ -69,13 +69,23 @@ If the user gets the score above 10, they win the game. If the computer gets a s
 ### Errors and Constraints
 Every program has bugs or features that had to be scrapped for time. Use this section to create a bullet list of all known errors and deficiencies that remain in your code. Bugs found that aren't acknowledged here will be penalized.
 
- If the user presses the spacebar too quickly the robot arm starts chaking and then does all the hand signs very quickly.
- I was not able to prevent the player from choosing a hand sign before resetting the position. If I could figure out why it didn't work I would have done that.
+ If the user presses the spacebar too quickly the robot arm starts shaking and then does all the hand signs very quickly.
+ I was not able to prevent the player from choosing a hand sign before resetting the position. I think this is an issue with loops and the order in which the classes are initialized and, but I could not figure out how to fix this issue.
 
-### ❗Reflection
+### Reflection
 In three to four well-written paragraphs, address the following (at a minimum):
+
 - Why did you select the project that you did?
+  I have experience making games in other languages so I knew a game was something I could do well and enjoy making. I chose to expand on the Rock Paper Scissors homework t16, because it was familiar to me and I understood how it worked. I also wanted to be able to work on a project that I could draw some pixel art for. This project seemed to me like it would be fun to draw the pixel art for. 
+  
 - How closely did your final project reflect your initial design?
+  The output of the project was exactly how I had wanted it, but the CRC cards and idea of the code ended up being very different from the classes and code in the final. I had to make changes to fix bugs and change code as I learned more about how to use the turtle library, classes, and data storage. I had a much neater initial design for my code, but as I discovered that some of my plans were based on assumptions about python that were false. My lack of understanding meant that I had to make a lot of changes to the code, and resulted in a more untidy and confusing code than I had hoped for.
+  
 - What did you learn from this process?
+  I learned that class attributes cannot be accessed outside the class unless the class has been initialized. This caused a lot of confusion in the beggining of my project, but eventually I discovered how it worked and could resumed making the project without errors. I also learned how to import gif files into the python directory, set the turtle's shape to a gif, and import and play sounds using winsound library. I also greatly improved my understanding of classes.
+  
 - What was the hardest part of the final project?
+  When I made my CRC cards and plan for my project, I did not know exactly how Classes and turtle.Screens, and screen loops worked. After figuring out how these things worked through testing and faliure, I had to make so many changes to the code that it started to get confusing. Debigging and fixing the code when I did not know exactly what was wrong was the hardest part of the proccess of making my final project.
+  
 - What would you do differently next time, knowing what you know now?
+  I would debug and test how functions work using print statements before adding too much to my project. I think the reason I had so much trouble with the ordering of my code was because I added too much without testing each line. Next time I sould test my understanding of everything I use in the project if am not completely sure how it works. I assumed some things in python worked a certain way and planned my project around them working that way, but I ended up changing my entire plan because I didn't realize how some things worked. To avoid making this mistake in the future, I will test that all methods, classes, and libraries work how they need to in my project.
