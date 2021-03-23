@@ -13,7 +13,6 @@ import turtle
 import winsound
 
 
-
 class Wn:
     wn = turtle.Screen()  # create the window
     wn.setup(800, 600)  # Determine the window size
@@ -58,10 +57,11 @@ class Player:
         self.turtle.penup()
         self.turtle.setpos(-100, -120)
         self.choose_hand_sign()     # run the choose hand sign function
+
         for i in range(len(Weapons.player_images)):  # import images
             self.wn.addshape(Weapons.player_images[i])
         self.turtle.shape("gifs/rock.gif")
-
+    
     def choose_hand_sign(self):
         if self.choosing == True:
             Wn.wn.onkeypress(self.h1, "1")
@@ -136,7 +136,7 @@ class Player:
                 Scorekeeper.turtle.shape(Scorekeeper.shapes[3])
                 Computer.score += 1
                 Score()
-        else: #reset the hands for the next round
+        else:   # reset the hands for the next round
             self.turtle.setpos(-100, -120)  # move player hand back to start position
             Computer.turtle.setpos(70, -100)  # move computer hand back to start position
             self.choosing = True
@@ -279,7 +279,6 @@ def main():
         Tutorial()
         get_winner(Player.weapon,Computer.weapon)
     Wn.wn.mainloop()
-
 
 
 
