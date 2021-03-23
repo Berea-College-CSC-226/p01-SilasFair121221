@@ -160,7 +160,6 @@ class Computer:
         for i in range(len(Weapons.computer_images)):  # import images
             self.wn.addshape(Weapons.computer_images[i])
         self.turtle.shape("gifs/computer_rock.gif")
-        self.turtle.resizemode("auto")
 
 class Scorekeeper:
     shapes = ["gifs/score_man.gif","gifs/score_man_win.gif","gifs/score_man_tie.gif","gifs/score_man_lose.gif"]
