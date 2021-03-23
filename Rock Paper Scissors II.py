@@ -267,6 +267,9 @@ def get_winner(self, computer):
 
 
 def main():
+    """
+    This is where the magic happens
+    """
     global has_won
     has_won = False
     # play a song
