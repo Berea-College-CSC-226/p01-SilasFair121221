@@ -14,6 +14,9 @@ Throughout this project, you have likely used outside resources. Reference all i
 Python winsound - Sound playing interface for windows.
 https://docs.python.org/3/library/winsound.html
 
+Python turtle - change displayed background image
+https://stackoverflow.com/questions/41664941/python-turtle-change-displayed-background-image
+
 Music by Eric Matyas
 www.soundimage.org
 ---
