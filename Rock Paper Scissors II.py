@@ -5,7 +5,7 @@
 # Assignment:FINAL PROJECT: rock paper scissors 2
 ##################################################################################
 # Acknowledgements:
-#
+# Music by Eric Matyas - www.soundimage.org
 #
 ##################################################################################
 import random
@@ -140,7 +140,7 @@ class Player:
             self.turtle.setpos(-100, -120)  # move player hand back to start position
             Computer.turtle.setpos(70, -100)  # move computer hand back to start position
             self.choosing = True
-            self.history.append(self.weapon) # add the choice to the Player.history list
+            self.history.append(self.weapon)    # add the choice to the Player.history list
             Scorekeeper.turtle.shape(Scorekeeper.shapes[0])
             Computer.turtle.shape(Weapons.computer_images[0])
             self.weapon = Weapons.weapon[0]
@@ -186,7 +186,6 @@ class Score:
     def __init__(self):
         """Refresh the score"""
         self.turtle.clear()
-        #self.turtle.pencolor("white")
         self.turtle.write(str(Player.score)+"                "+str(Computer.score), move=False, align="center",
                 font=("Arial", 20, "normal"))
 
