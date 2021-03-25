@@ -1,4 +1,4 @@
-# ❗CSC226 Project
+# CSC226 Project
 
 **Term**: Spring 2021
 
