@@ -39,7 +39,7 @@ www.soundimage.org
   as an image and including the image(s) in the README. You can do this
   by saving an image in the repository and linking to it. See the sample CRC card below - and replace it with your own.
   
-![image](https://user-images.githubusercontent.com/78548914/110878955-20b95480-82aa-11eb-8629-b97a63d7e4f9.png)
+![image](https://raw.githubusercontent.com/Berea-College-CSC-226/p01-SilasFair121221/master/image/fairsCRCcard.PNG?token=ASXI7MUNCGX62G3ZMAFZKR3AMXF5Y)
 
 
 ---
